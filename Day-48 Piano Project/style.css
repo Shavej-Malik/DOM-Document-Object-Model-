@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: royalblue;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.piano-box{
+    width: 70vw;
+    border: 5px solid black;
+    display: flex;
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block-start: 10px;
+    padding-block-end: 15px;
+    position: relative;
+
+}
+.key{
+    width: 3rem;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.white-key{
+    height: 13rem;
+    border: 1px solid black;
+    background-color: white;
+    transition: 0.2s all ;
+    box-shadow: 2px 2px 10px 0px white;
+    color: black;
+}
+.black-key{
+    height: 10rem;
+    width: 1.9vw;
+    background: linear-gradient(0deg,black , white);
+    position: absolute;
+    top: 11px;
+    z-index: 1;
+    transition: 0.2s all ;
+}
+.black-1{
+    left: 2.9vw;
+}
+.black-2{
+    left: 6.3vw;
+}
+.black-4{
+    left: 12.7vw;
+}
+.black-5{
+    left: 15.9vw;
+}
+.black-6{
+    left: 19.2vw;
+}
+.black-8{
+    left: 25.5vw;
+}
+.black-9{
+    left: 28.8vw;
+}
+.black-11{
+    left: 35.2vw;
+}
+.black-12{
+    left: 38.5vw;
+}
+.black-13{
+    left: 41.7vw;
+}
+.black-15{
+    left: 48.1vw;
+}
+.black-16{
+    left: 51.4vw;
+}
+.black-18{
+    left: 57.8vw;
+}
+.black-19{
+    left: 61vw;
+}
+.black-20{
+    left: 64.2vw;
+}
+
+.white-key:active,
+.white-key.active{
+    transform: rotate3d(1, 0, 0, 20deg);
+    background: linear-gradient(0deg,pink , white);
+}
+.black-key:active,
+.black-key.active{
+    transform: translateY(10px);
+    background: linear-gradient(0deg,rgb(53, 213, 88) , white);
+}
