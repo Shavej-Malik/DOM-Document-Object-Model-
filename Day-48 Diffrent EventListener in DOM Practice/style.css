@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+}
+main{
+    height: 200%;
+    width: 100%;
+    background-color: #d6cdcd;
+    position: relative;
+}
+img{
+    height: 15px;
+    /* position: absolute;with this cursor will not folow when we scroll */
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
