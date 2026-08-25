@@ -1,0 +1,7 @@
+- document.body.style.setProperty -> 
+    - document -> {"document" ka matlab hai poora HTML document/page.}    JavaScript ke paas browser ki current HTML page ka access hota hai.
+    - document.body -> HTML page ka <body> element do.
+    - document.body.style -> "style" ke through hum element ki inline CSS properties ko access/change kar sakte hain.
+    - setProperty() -> "setProperty()" ek method hai jo CSS property ko set/change karta hai.
+        - Syntax -> element.style.setProperty("property-name", "value");
+        - example -> document.body.style.setProperty("color", "red");
