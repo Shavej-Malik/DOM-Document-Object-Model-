@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 20vh;
+    width: 25vw;
+    background-color: rgb(106, 100, 100);
+    border-radius: 30px;
+    /* box-shadow: 2px 2px 1px yellow ;x | y | spread radius | color */
+    box-shadow: inset 0px 0px 10px yellow ;/* x | y | spread radius | color (shadow show inside the box) */
+    text-align: center;
+    /* background: conic-gradient(from 0deg,red,royalblue,pink); */
+    animation: animate 1s ease alternate infinite;
+}
+@keyframes animate{
+    from{
+        background-color: rgb(106, 100, 100);
+    }
+    to{
+        background-color: yellowgreen;
+    }
+}
+h1{
+    font-size: 3rem;
+    font-family: monospace;
+    margin-top: 3rem;
+    text-shadow: 2px 2px 1px red;/* x | y | spread radius | color */
+}
