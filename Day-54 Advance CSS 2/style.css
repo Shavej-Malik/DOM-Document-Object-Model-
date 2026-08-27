@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 20vh;
+    width: 25vw;
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
+@property --bgColor{
+    syntax: "<color>";
+    initial-value: pink;
+    inherits: false;
+}
