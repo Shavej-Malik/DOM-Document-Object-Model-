@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    column-rule: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s linear;
+}
+.box:hover{
+    transform: scale(1.2) !important;
+}
+body:has(.box:hover) .box{
+    transform: scale(0.8);
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
